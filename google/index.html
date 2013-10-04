@@ -28,8 +28,8 @@
         <p>Search by voice</p>
       </div>
         <div class="buttonBox">
-          <button class="searchButton">Google Search</button>
-          <button class="getLucky">I'm Feeling Lucky</button>
+          <button class="searchButton link">Google Search</button>
+          <button class="getLucky link">I'm Feeling Lucky</button>
         </div>
       </div>
     </div>
@@ -37,7 +37,15 @@
   <script>
     var speechButton = document.getElementById("speechIcon");
     var pop = document.getElementById("speechPop");
-
+    var searchBox = document.getElementById("search");
+    var searchButtons = document.getElementsByClassName("link");
+    
+    searchButtons[1].addEventListener('click', function() {
+      searchBox.reset();
+    });
+    searchButtons[0].addEventListener('click', function() {
+      searchBox.reset();
+    });
     speechButton.addEventListener('mouseover', function(e) {
       pop.style.display ="block";
     });
