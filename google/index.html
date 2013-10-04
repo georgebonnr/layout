@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Fake Google</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    google
+    <header>
+
+      <a href="#"><img src="images/user.jpg" /></a>
+      <div class="share">Share</div>
+      <div class="notifications"></div>
+      <div class="apps"></div>
+      <a href="#">Images</a>
+      <a href="#">Gmail</a>      
+      <a href="#">+Name</a>
+
+    </header>
+
+    <div class="content">
+      <img class="google-logo" src="images/logo6w.png" />
+      <div class="searchBox">
+        <form id="search">
+          <input type="text" name="search" autofocus>
+          <img src="images/speech.png" id="speechIcon">
+        </form>
+      <div id="speechPop">
+        <p>Search by voice</p>
+      </div>
+        <div class="buttonBox">
+          <button class="searchButton">Google Search</button>
+          <button class="getLucky">I'm Feeling Lucky</button>
+        </div>
+      </div>
+    </div>
+  
+  <script>
+    var speechButton = document.getElementById("speechIcon");
+    var pop = document.getElementById("speechPop");
+
+    speechButton.addEventListener('mouseover', function(e) {
+      pop.style.display ="block";
+    });
+
+    speechButton.addEventListener('mouseleave', function(e){
+      pop.style.display = "none";
+    });
+  </script>
   </body>
 </html>
