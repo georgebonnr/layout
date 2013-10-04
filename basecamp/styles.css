@@ -1,3 +1,40 @@
 body{
-  /* rules go here */
+  height:100%;
+  width: 100%
+}
+
+#content {
+  position: relative;
+  width: 1060px;
+  margin:0 auto;
+}
+header {
+  height:80px;
+  width:1000px;
+  margin: 0 auto;
+  border-bottom:1px solid #ccc;
+}
+
+header a, header button {
+  float:right;
+  margin: 25px 30px 0 0;
+}
+
+header .basecamp-logo {
+  float:left;
+  height: 55px;
+  width:195px;
+  margin: 15px 0 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  color:#000;
+}
+
+header a p {
+  text-align: center;
+  text-decoration: none;
+  padding:0px;
+  margin: 0px;
 }
