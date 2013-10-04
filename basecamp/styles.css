@@ -38,3 +38,9 @@ header a p {
   padding:0px;
   margin: 0px;
 }
+
+header button {
+  background-color: #1a7de6;
+  border-radius: 3px;
+  border:1px solid #000;
+}
