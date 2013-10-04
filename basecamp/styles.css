@@ -1,6 +1,8 @@
 body{
   height:100%;
-  width: 100%
+  width: 100%;
+  font-family: "Proxima Nova", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 13px;
 }
 
 #content {
@@ -8,10 +10,11 @@ body{
   width: 1060px;
   margin:0 auto;
 }
+
 header {
   height:80px;
   width:1000px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   border-bottom:1px solid #ccc;
 }
 
@@ -34,13 +37,74 @@ header a {
 
 header a p {
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   padding:0px;
   margin: 0px;
+  font-weight: 800;
+  color:#06C;
+  font-size:14px;
+}
+
+.aLink-clean {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
 }
 
 header button {
   background-color: #1a7de6;
   border-radius: 3px;
   border:1px solid #000;
+  color:#fff;
+  border-bottom:2px solid #000;
+  width: 66px;
+  height:36px;
+}
+
+h1 {
+  font-size: 48px;
+  width: 800px;
+  margin: 20px auto 0px auto;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: 50px;
+}
+
+.main-content {
+  width: 1000px;
+  height: 600px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 50px;
+}
+
+.joy {
+  width: 380px;
+  height: 600px;
+  float: left;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 100px;
+}
+
+.joy img {
+  position: absolute;
+  bottom: 0;
+}
+
+.trial-box {
+  width: 350px;
+  height: 550px;
+  float: right;
+  border-radius: 15px;
+  border: 6px solid #000;
+  margin-right: 30px;
+}
+
+blockquote {
+  width: 200px;
+}
+
+small {
+  text-align: left;
+  margin: 10px;
 }
